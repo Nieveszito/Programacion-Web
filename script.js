@@ -1,5 +1,5 @@
 //CLASE 24/09/24
-//NOMBRE: Nieves Sandoval Roberto Gawl
+//NOMBRE: Nieves Sandoval Roberto Gael
 
 
 //VARIABLES
