@@ -1,28 +1,40 @@
 <!DOCTYPE html>
+<!-- Declara que este documento usa HTML5 -->
 <html lang="en">
+    <!-- Determina el lenguaje -->
 <head>
+    <!-- Es la primera de las dos partes en que se estructura un documento -->
     <meta charset="UTF-8">
+    <!-- Especifica la codificación de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Define cómo debe mostrarse el contenido en diferentes dispositivos, haciendo que sea responsive -->
+    <title>Calculadora Sencilla</title>
+    <!-- El título de la página que aparecerá en la pestaña del navegador -->
     <link rel="stylesheet" href="style.css">
+    <!-- Vincula un archivo CSS externo llamado 'style.css' para el diseño de la página -->
+
 </head>
 <body>
+    <!-- Inicia el cuerpo del documento, que contiene el contenido visible de la página -->
     <div class="calculator">
-
-    
+        <!-- Contenedor principal de la calculadora con la clase 'calculator' para aplicar estilos -->
         <input type="text" id="display" class="calculator-screen" values="" disabled>
-
-        <div class="calculatoir-button">
+        <!-- Campo de entrada de texto para mostrar los números y operaciones. Está deshabilitado para evitar que el usuario escriba directamente. -->
+        <div class="calculator-buttons">
+            <!-- Contenedor para los botones de la calculadora-->
             <button class="button" onclick="clearDisplay()">C</button>
+            <!-- Botón para limpiar el display. Llama a la función 'clearDisplay()' cuando se presiona -->
             <button class="button" onclick="deleteLast()">DEL</button>
+            <!-- Botón para eliminar la ultima seleccion. Llama a la función 'deleteLast()' cuando se presiona -->
             <button class="button" onclick="appendToDisplay('/')">/</button>
-            <button class="button" onclick="appendToDisplay('*')">*</button>
+             <!-- Llama a la función 'appendToDisplay()' cuando se presiona -->
+            <button class="button" onclick="appendToDisplay('*')">X</button>
 
             <button class="button" onclick="appendToDisplay('7')">7</button>
             <button class="button" onclick="appendToDisplay('8')">8</button>
             <button class="button" onclick="appendToDisplay('9')">9</button>
             <button class="button" onclick="appendToDisplay('-')">-</button>
-    
+
             <button class="button" onclick="appendToDisplay('4')">4</button>
             <button class="button" onclick="appendToDisplay('5')">5</button>
             <button class="button" onclick="appendToDisplay('6')">6</button>
@@ -33,13 +45,11 @@
             <button class="button" onclick="appendToDisplay('3')">3</button>
             <button class="button equal-button" onclick="calculateResult()">=</button>
 
-            <button class="button" onclick="appendToDisplay('0')">0</button>
-            <button class="button" onclick="appendToDisplay('.')">.</button>
-
-
+            <button class="button" onclick="apppendToDisplay('0')">0</button>
+            <button class="button" onclick="apppendToDisplay('.')">.</button>
 
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
